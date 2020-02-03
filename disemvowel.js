@@ -8,11 +8,11 @@ function disemvowel(str) {
       item !== 'i' &&
       item !== 'I' &&
       item !== 'o' &&
-      item !== 'O') {
+      item !== 'O' &&
+      item !== 'u' &&
+      item !== 'U') {
       return item;
       }
     });
   return result.join('');
   }
-
-let newWord = disemvowel('Hello how are you?');
