@@ -16,3 +16,8 @@ function disemvowel(str) {
     });
   return result.join('');
   }
+
+  function disemvowelImproved(str){
+    let re = /[aeiou]/gi;
+    return str.replace(re, '')
+  }
