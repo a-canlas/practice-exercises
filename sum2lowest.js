@@ -1,7 +1,6 @@
 function sumTwoSmallestNumbers(numbers) {
-  //Code here
   //Find smallest
-  let smallest = 100000000;
+  let smallest = Math.max.apply(null, numbers);
   let smallestIndex = null;
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] < smallest) {
@@ -10,7 +9,7 @@ function sumTwoSmallestNumbers(numbers) {
     }
   }
   //Find second smallest
-  let secondSmallest = 100000000;
+  let secondSmallest = Math.max.apply(null, numbers);
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] < secondSmallest && i !== smallestIndex) {
       secondSmallest = numbers[i];
