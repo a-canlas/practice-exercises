@@ -16,3 +16,4 @@ function countVowels(str) {
 function countVowelsSS(str){
   return str.match(/[aeiou]/gi).length;
 }
+// .match takes a regex and returns the results that match in an array
