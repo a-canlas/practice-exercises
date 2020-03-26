@@ -5,3 +5,7 @@ function societyName(friends) {
 }
 
 // Takes the first letter of each name, sorts it and returns as a string
+
+function societyNameSS(friends) {
+  return friends.map(person => person[0]).sort().join('');
+}
