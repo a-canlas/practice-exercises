@@ -8,3 +8,8 @@ function minutesToSeconds(time) {
 }
 
 // Convert MM:SS into seconds. If SS is 60 or greater, return false. Otherwise, return the total seconds
+
+function minutesToSecondsSS(time){
+  let [m, s] = time.split(':').map(Number);
+  return s >= 60 ? false : m * 60 + s;
+}
