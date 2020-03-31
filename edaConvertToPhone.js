@@ -4,3 +4,5 @@ function formatPhoneNumber(numbers) {
   let last = numbers.slice(6).join('');
   return `(${area}) ${pre}-${last}`;
 }
+
+// Receive an array of numbers and format to (###) ###-####
