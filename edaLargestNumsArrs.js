@@ -4,3 +4,7 @@ function findLargestNums(arr) {
   })
   return result;
 }
+
+function findLargestNumsSS(arr){
+  return arr.map( index => Math.max(...index));
+}
