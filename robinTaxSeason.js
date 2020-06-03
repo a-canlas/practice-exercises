@@ -3,5 +3,6 @@
 
 function calculateTax(dollarAmount, taxPercent){
   let taxInCents = (dollarAmount * (taxPercent / 100) + dollarAmount) * 100;
-  return `${taxInCents} cents`;
+  let result = taxInCents.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return `${result} cents`;
 }
