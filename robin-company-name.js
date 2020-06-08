@@ -1,5 +1,5 @@
 function nameCompany(founderNames){
   let firstLetters = founderNames.map(name => name.slice(0, 1));
-  return firstLetters.sort().join('');
+  return firstLetters.sort().join('').toUpperCase();
 }
-console.log(nameCompany(['Tom', 'Dick', 'Harry']));
+console.log(nameCompany(['tom', 'dick', 'harry']));
