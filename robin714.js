@@ -27,6 +27,16 @@ function makeFrame(width, height, character){
   console.log(widthArr1);
   console.log(widthArr2);
   // Make inner frames
-
+  for(let i = 0; i < height - 2; i++){
+    let frameArr = [];
+    let frame = "";
+    for(let j = 0; j < width; j++){
+      let char =  j === 0 || j === width - 1 ? character : " ";
+      frame += char;
+    }
+    frameArr.push(frame);
+    result.push(frameArr);
+  }
+  console.log(result);
 
 }
