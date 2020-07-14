@@ -24,8 +24,6 @@ function makeFrame(width, height, character){
   widthArr1.push(widthStr);
   widthArr2.push(widthStr);
 
-  console.log(widthArr1);
-  console.log(widthArr2);
   // Make inner frames
   for(let i = 0; i < height - 2; i++){
     let frameArr = [];
@@ -37,6 +35,8 @@ function makeFrame(width, height, character){
     frameArr.push(frame);
     result.push(frameArr);
   }
-  console.log(result);
+  result.unshift(widthArr1);
+  result.push(widthArr2);
 
+  return result;
 }
