@@ -9,6 +9,11 @@ function objectToArray(obj) {
   return result;
 }
 
+function objectToArrayBetter(obj){
+  return Object.entries(obj);
+}
+// Object.entries returns an array whose entries are arrays containing the objects enumeral keys and their values
+
 /* EXAMPLES
 
 objectToArray({
